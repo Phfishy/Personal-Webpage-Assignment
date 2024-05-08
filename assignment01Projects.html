@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!--Zachary Bernard 041073789-->
+<!--assignment01Projects.html-->
+<!--2024-03-10-->
+<!--projects page-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="CSS/style.css">
+		<meta name="description" content="projects page">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Zachary Bernard">
+		<title>Project</title>
+	</head>
+	<body>
+		<!--Navbar-->
+		<div class="navbar">
+			<div>
+				<a href="http://localhost/Assignment01/assignment01Resume.html" class="hyperlink"> Resume </a>
+			</div>
+			<div>
+				<a href="http://localhost/Assignment01/assignment01Contact.html" class="hyperlink"> Contact </a>
+			</div>
+			<div>
+				<a href="http://localhost/Assignment01/assignment01Index.html" class="hyperlink"> About </a>
+			</div>
+		</div>
+		
+		<!--Main Page Components-->
+		<h1> Academic Projects </h1>
+		
+		<div class="divbox">
+		
+			<div id="textbox">
+				<p id="projectHead"></p>
+				
+				<p id="projectDate"></p>
+			</div>
+			
+			<!--Box for all necessary project elements-->
+			<!--empty for javascript-->
+			<div id="projectbox">
+				
+				<ul class="blanklist">
+					<li id="tech"></li>
+					<li id="description"></li>
+				</ul>
+				
+				<div class="image">
+					<img src="vinylScreenshot" alt="projectImage" id="projectpic">
+				</div>
+			</div>
+			
+			<!--Buttons to cycle through projects-->
+			<button id="next"> Next </button>
+			<button id="previous"> Previous </button>
+			
+		</div>
+		
+		<!--Footer-->
+		<footer>
+			<p> Zachary Bernard | 041073789 | bern9375@algonquinlive.com </p>
+		</footer>
+		
+		<!--Script at bottom for loaded DOM elements-->
+		<script src="JS/script.js"></script>
+	</body>
+</html>

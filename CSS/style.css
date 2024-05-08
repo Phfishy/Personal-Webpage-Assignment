@@ -1,0 +1,167 @@
+/* 
+style.css for Assignment 01 project, used in all HHTML files 
+Written by Zachary Bernard 04107389
+styles all HTML files according to the instructions as well as personal taste
+*/
+
+/* General styling */
+body {
+	font-family: Georgia, "Times New Roman", sans-serif;
+	text-align: center;
+	display: block; 
+	border-width: 15px;
+	border-radius: 25px;
+	margin: auto;
+	background-color: #0099ff;
+}
+
+footer { 
+	text-align: left;
+	font-size: 8pt;
+	margin-left: 20px;
+}
+
+.subhead  {
+	margin-left: 10px;
+}
+
+.blanklist{
+	list-style-type: none;
+	margin: 0;
+} 
+
+.blanklist li {
+	padding: 10px 0px;
+}
+
+.pointedlist{
+	margin: 0;
+}
+
+.pointedlist li {
+	padding: 10px 0px;
+}
+
+.centerHeading {
+	text-align: center;
+} 
+
+.navbar	{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+	background-color: #0000cc;
+}
+
+.hyperlink { 
+	color: #ffffff;
+}
+
+#msg {
+	height: 350px;
+}
+
+#projectHead {
+	font-weight: bold;
+}
+/* Button Styling */
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit], input[type=reset] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+}
+
+#next, #previous {
+	width: 120px;
+	border-radius: 12px;
+	padding: 7px 30px;
+}
+
+/*Box Styling*/
+.textbox {
+	width: 900px;
+	text-align: left;
+	margin: auto;
+	min-width: 300px;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.smallTextbox {
+	width: 300px;
+	height: 250px;
+	text-align: left;
+	margin: auto;
+	min-width: 300px;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.divbox {
+	display: flex;
+	align-items: start;
+	flex-wrap: wrap;
+	max-width: 900px;
+	gap: 5px;
+	text-align: left;
+	margin: auto;
+	
+}
+
+.contactbox {
+	text-align: left;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+/*Image Styling */
+#dogpic {
+	width: 33%;
+	height: 33%;
+	border-radius: 10px;
+}
+
+#projectpic {
+	display: block;
+	margin: auto;
+	width: 60%;
+	Height: 60%;
+	border-radius: 10px;
+}
+
+#projectbox { 
+	width: 100%;
+	height: 450px;
+	padding: 12px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	background-color: #ffffff;
+}
+
+/*Media query for dynamic screen size */
+@media screen and (max-width: 900px) {
+	.divbox {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.textbox  {
+		width: 50%;
+	}
+}
+
